@@ -18,5 +18,63 @@ a {
 }
 
 body {
-  background-color: #88effd;
+  background-color: #a1fd88;
+}
+
+/* components/Calculator.module.css */
+.calculator {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #f41f1f;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #88b3fd;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border: 1px solid #221276;
+}
+
+.display input {
+  width: 100%;
+  height: 40px;
+  font-size: 1.2em;
+  text-align: right;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #717612;
+}
+
+.result {
+  font-size: 1.5em;
+  text-align: right;
+  color: #333;
+  border: 1px solid #761e12;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  border: 1px solid #12111b;
+}
+
+.buttons button {
+  width: 100%;
+  height: 40px;
+  font-size: 1.2em;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 7px solid #737612;
+}
+
+.buttons button:hover {
+  background-color: #ddd;
 }
